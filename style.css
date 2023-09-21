@@ -2,6 +2,7 @@
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 
 .sxheader{
@@ -21,26 +22,32 @@
     gap: 20px;
     color: white;
 }
-.menu-list ul li:hover{
+.menu-list ul li:hover, .menu-list ul li #cadastro:hover {
     cursor: pointer;
     color: rgb(0, 0, 0);
     transition: 0.25s;
 }
 main{
     display: flex;
-    margin-top: 30px;
     justify-content: center;
+    background-image: url('https://www.sxgrupo.com.br/img/banner.c62d48f0.png');
+    height: 100vh;
+    background-size: contain;
+    
 }
 .container-popup{
-    border: 2px solid black;
+    border: none;
     border-radius: 8px;
-    padding: 50px;
-    box-shadow: 2px 2px;
+    padding: 70px;
+    box-shadow: 1px 2px 8px white;
+    background-color: white;
+    height: fit-content;
+    margin-top: 30px;
 }
 .pop-form form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 form input{
@@ -58,4 +65,9 @@ form button{
     padding: 8px;
     color: white;
     width: 200px;
+}
+#cadastro{
+    background: none;
+    border: none;
+    color: white;
 }
